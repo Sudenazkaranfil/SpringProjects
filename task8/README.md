@@ -36,14 +36,14 @@ Uygulamayı çalıştırın:
 ```bash
 mvn spring-boot:run
 ```
-**FakeSMTP’i başlatın:
+FakeSMTP’i başlatın:
 
 FakeSMTP’i indirip çalıştırın.
 
-Port: 1025 (JavaMailSender ile aynı olmalı)**
+Port: 1025 (JavaMailSender ile aynı olmalı)
 
 ## 📡 Endpoint Bilgileri
-1. Test Mail Gönderimi
+### Test Mail Gönderimi
 
 URL: http://localhost:8080/mail/send
 
