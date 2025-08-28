@@ -11,8 +11,7 @@ public class MailRequest {
     private String to;
     private String subject;
 
-    // HTML içeriğe gömülecek alanlar:
     private String title;       // e-postanın üst başlığı
-    private String body;        // HTML güvenli gövde (paragraflar vs. olabilir)
-    private String actionUrl;   // buton linki (opsiyonel)
+    private String body;        // HTML güvenli gövde 
+    private String actionUrl;   // buton linki
 }
