@@ -51,13 +51,14 @@ Method: POST
 
 Response: "Mail gönderildi ✅"
 
-2. Mail İçeriği Örneği
-3. From: suden@DESKTOP-7NH88GH
+Mail İçeriği Örneği
+```bash
+From: suden@DESKTOP-7NH88GH
 To: test@fake.com
 Subject: Test Mail Başlığı
 
 Mail içeriği buraya gelecek
 İşlemi Tamamla
 Bu e-posta otomatik gönderilmiştir. Lütfen yanıtlamayın.
-
+```
 <img width="1653" height="823" alt="mailhog" src="https://github.com/user-attachments/assets/1314aaad-20a5-4c1e-bb05-1f229920efcf" />
