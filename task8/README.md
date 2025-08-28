@@ -1,10 +1,13 @@
-# Task 8: Spring Boot ile Mail Gönderme Servisi
+# Java Spring Boot – Mail Gönderim Servisi (FakeSMTP)
 
-## 🎯 Amaç
-Bu proje, Spring Boot kullanarak uygulama içinden e-posta gönderimini öğrenmek amacıyla geliştirilmiştir.  
-Mail gönderimi için **Spring Boot Starter Mail** kütüphanesi ve test ortamında **FakeSMTP** aracı kullanılmıştır.  
+## 📌 Proje Hakkında
+Bu proje, **Spring Boot** ve **JavaMailSender** kullanarak e-posta gönderimi yapmak için hazırlanmıştır.  
+Gerçek e-posta göndermek yerine, test amaçlı **FakeSMTP** ile mail gönderimi sağlanmaktadır.  
 
-Gerçek hayatta bu yapı, kullanıcı kayıt onayı, parola sıfırlama, bildirim e-postaları gibi senaryolarda yaygın olarak kullanılır.
+### Amaç
+- Mail gönderim mantığını öğrenmek.  
+- Spring Boot uygulamasından e-posta gönderimini test etmek.  
+- Test ortamında mail içeriğini görüntülemek.
 
 ---
 
@@ -19,3 +22,42 @@ Gerçek hayatta bu yapı, kullanıcı kayıt onayı, parola sıfırlama, bildiri
 
 ---
 
+## 🛠 Kurulum
+
+1. Projeyi klonlayın:
+```bash
+git clone https://github.com/sudenazkaranfil/mail-demo.git
+```
+Maven bağımlılıklarını yükleyin:
+```bash
+mvn clean install
+```
+Uygulamayı çalıştırın:
+```bash
+mvn spring-boot:run
+```
+**FakeSMTP’i başlatın:
+
+FakeSMTP’i indirip çalıştırın.
+
+Port: 1025 (JavaMailSender ile aynı olmalı)**
+
+## 📡 Endpoint Bilgileri
+1. Test Mail Gönderimi
+
+URL: http://localhost:8080/mail/send
+
+Method: POST
+
+Response: "Mail gönderildi ✅"
+
+2. Mail İçeriği Örneği
+3. From: suden@DESKTOP-7NH88GH
+To: test@fake.com
+Subject: Test Mail Başlığı
+
+Mail içeriği buraya gelecek
+İşlemi Tamamla
+Bu e-posta otomatik gönderilmiştir. Lütfen yanıtlamayın.
+
+<img width="1653" height="823" alt="mailhog" src="https://github.com/user-attachments/assets/1314aaad-20a5-4c1e-bb05-1f229920efcf" />
