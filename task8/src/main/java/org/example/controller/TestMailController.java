@@ -13,7 +13,7 @@ public class TestMailController {
 
     private final MailService mailService;
 
-    // 1️⃣ Mail gönderme endpoint (FakeSMTP ile yakalanacak)
+    // Mail gönderme endpoint
     @GetMapping("/send-test-mail")
     @ResponseBody
     public String sendTestMail() {
@@ -27,7 +27,7 @@ public class TestMailController {
         return "Mail gönderildi (FakeSMTP ile yakalanacak)";
     }
 
-    // 2️⃣ Mail önizleme endpoint (tarayıcıda gör)
+    // Mail önizleme endpoint
     @GetMapping("/preview-mail")
     public String previewMail(Model model) {
         model.addAttribute("title", "Test Mail Başlığı");
@@ -35,6 +35,6 @@ public class TestMailController {
         model.addAttribute("body", "Bu mail test amaçlı gönderilmektedir.");
         model.addAttribute("actionUrl", "https://example.com");
 
-        return "email-template"; // templates/email-template.html
+        return "email-template"; 
     }
 }
