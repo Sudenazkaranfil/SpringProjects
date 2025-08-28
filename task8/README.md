@@ -3,6 +3,7 @@
 ## 📌 Proje Hakkında
 Bu proje, **Spring Boot** ve **JavaMailSender** kullanarak e-posta gönderimi yapmak için hazırlanmıştır.  
 Gerçek e-posta göndermek yerine, test amaçlı **FakeSMTP** ile mail gönderimi sağlanmaktadır.  
+<img width="517" height="94" alt="local" src="https://github.com/user-attachments/assets/44c6b2c5-ffb0-405e-8e87-c8936d8c5c13" />
 
 ### Amaç
 - Mail gönderim mantığını öğrenmek.  
