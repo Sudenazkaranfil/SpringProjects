@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${subject}">Mail Başlığı</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f6f8; margin:0; padding:0; }
+        .container { max-width:600px; margin:30px auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+        h1 { color:#333; font-size:24px; margin-bottom:10px; }
+        p { color:#555; font-size:16px; line-height:1.5; }
+        a.button { display:inline-block; padding:12px 20px; margin-top:20px; color:#fff; background:#007bff; text-decoration:none; border-radius:5px; font-weight:bold; }
+        a.button:hover { background:#0056b3; }
+        .footer { margin-top:30px; font-size:12px; color:#999; text-align:center; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${title}">Başlık Buraya Gelecek</h1>
+    <p th:text="${body}">Mail içeriği buraya gelecek</p>
+    <a class="button" th:href="${actionUrl}">İşlemi Tamamla</a>
+    <div class="footer">
+        <p>Bu e-posta otomatik gönderilmiştir. Lütfen yanıtlamayın.</p>
+    </div>
+</div>
+</body>
+</html>
