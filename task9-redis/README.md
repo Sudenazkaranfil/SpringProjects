@@ -27,6 +27,17 @@ docker run --name redis -p 6379:6379 -d redis
 ```
 application.properties içinde default Redis host ve port (localhost:6379) kullanılmaktadır.
 
+## Neden Redis Kullanıyoruz?
+
+- Redis, merkezi ve paylaşımlı bir cache sağlar.  
+- Uygulama kapansa bile cache korunabilir (kalıcı ayar yapılırsa).  
+- Birden fazla sunucu veya uygulama Redis’e erişebilir ve cache paylaşabilir.  
+- TTL ve eviction policy yönetimi kolaydır.  
+
+**Özet:**
+- Caffeine: Lokal, tek sunucu için hızlı ama geçici (ephemeral).  
+- Redis: Merkezi, paylaşımlı ve prod ortamına uygun.
+- 
 ## Notlar
 
 Cache TTL: 5 dakika
