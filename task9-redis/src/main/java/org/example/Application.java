@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
-@EnableCaching  // Önbellek kullanımını etkinleştirir (Redis dahil)
+@EnableCaching  // Önbellek kullanımını etkinleştirme
 public class Application {
 
     public static void main(String[] args) {
